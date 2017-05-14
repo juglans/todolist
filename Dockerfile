@@ -7,4 +7,4 @@ RUN npm install --registry=https://registry.npm.taobao.org
 
 RUN npm run build
 EXPOSE 8080
-CMD ["npm", "run prd"]
+CMD ["node", "build/prd-server.js"]
