@@ -4,6 +4,7 @@ ENV HTTP_PORT 8080
 COPY . /app  
 WORKDIR /app
 RUN npm install --registry=https://registry.npm.taobao.org
+
+RUN npm run build
 EXPOSE 8080
-CMD ["npm", "buld"]
 CMD ["npm", "prd"]
